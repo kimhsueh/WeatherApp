@@ -1,0 +1,80 @@
+.card-container {
+  display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.weather-card {
+  border-color: #1565c0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #bbdefb;
+  width: 131px;
+  height: 200px;
+  border: #1976D2 solid 2px;
+  border-radius: 20px;
+}
+.weather-card-current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1976d2;
+  width: 131px;
+  height: 200px;
+  border-radius: 20px;
+}
+#max-temp {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+#min-temp {
+  color: green;
+  display: flex;
+}
+#max-temp-current {
+  color: #f98686;
+  display: flex;
+  justify-content: flex-end;
+}
+#min-temp-current {
+  color: greenyellow;
+  display: flex;
+}
+.day-text {
+  color: #1565c0;
+  font-weight: bold;
+}
+.day-text-current {
+  color: #bbdefb;
+  font-weight: bold;
+}
+.temperatures {
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+}
+
+.rain-icons {
+  height: 50px;
+  width: 50px;
+}
+.icons {
+  height: 55px;
+  width: 55px;
+}
+
+#precipitation-chance {
+  color: #1565c0;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-row: 3;
+    grid-column: 1;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
